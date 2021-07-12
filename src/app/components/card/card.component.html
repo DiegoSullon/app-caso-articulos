@@ -1,5 +1,5 @@
 <div class="card">
-    <img [src]="article?.imagen" alt="">
+    <img [src]="getUrl(article?.imagen)" alt="">
     <div class="card-content">
         <h2 class="name">{{article?.nombre}}</h2>
         <p class="description">{{article?.descripcion}}</p>
