@@ -1,0 +1,56 @@
+#main {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+#navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em .5em;
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem white !important;
+}
+.btn-outline-primary {
+  color: white;
+  border-color: white;
+}
+.btn-outline-primary:hover {
+  color: black !important;
+  background-color: white;
+  border-color: white;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem white;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  background-color: transparent;
+  border-color: white;
+}
+
+/* form */
+form {
+  display: inline;
+}
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: white;
+}
+.btn-primary.focus, .btn-primary:focus{
+  box-shadow: 0 0 0 0.2rem white !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: black !important;
+  background-color: white;
+  border-color: white;
+}

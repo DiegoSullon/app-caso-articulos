@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="article?.imagen" alt="">
+    <div class="card-content">
+        <h2 class="name">{{article?.nombre}}</h2>
+        <p class="description">{{article?.descripcion}}</p>
+        <p class="stock">Stock: {{article?.stock}}</p>
+        <span class="precio">${{article?.precioVenta}}</span>
+    </div>
+</div>
