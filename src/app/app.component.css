@@ -54,3 +54,11 @@ form {
   background-color: white;
   border-color: white;
 }
+.btn-outline-dark {
+  color: #fff;
+  background-color: transparent;
+  border-color: white;
+}
+.btn-outline-dark.focus, .btn-outline-dark:focus{
+  box-shadow: 0 0 0 0.2rem white !important;
+}
