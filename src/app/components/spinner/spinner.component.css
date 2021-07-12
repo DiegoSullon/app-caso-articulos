@@ -1,0 +1,35 @@
+.content-spinner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  padding: 2em;
+}
+.spinner{
+  display: inline-block;
+  padding: 5rem;
+  border-radius: 50%;
+  animation: rotate 0.7s linear infinite;
+  background: linear-gradient(90deg, black 0%, white 53%);
+}
+.spinner::after{
+  content: " ";
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  margin: 10px;
+}
+@keyframes rotate { 
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}

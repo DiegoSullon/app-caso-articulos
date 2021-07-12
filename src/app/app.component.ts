@@ -10,6 +10,7 @@ import { CloudinaryService } from './services/cloudinary.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  loading: boolean = false;
   // image
   imagen?: File;
   imagenMin?: File;
@@ -53,9 +54,14 @@ export class AppComponent implements OnInit{
     }
   }
   getArticles = (asc:boolean) => {
+    console.log('Loading data');
+    this.loading= true;
     this.articleService.getArticlesSort(asc,this.sortOption).subscribe(data => {
       this.articles = data;
-      console.log(this.articles);
+      this.loading= false;
+    },err => {
+      this.loading= false;
+      console.log('Error:',err);
     })
   }
   changeSort = (index:number) => {

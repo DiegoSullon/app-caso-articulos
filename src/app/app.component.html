@@ -8,9 +8,6 @@
 <main id="main">
     <h1>Articulos</h1>
     <nav id="navbar">
-        <button class="btn btn-outline-primary" id="backButton">
-            <i class="fas fa-arrow-left"></i>
-        </button>
         <button class="btn btn-outline-primary" id="createButton" (click)="open(content)">New</button>
         <div ngbDropdown class="d-inline-block">
             <button class="btn btn-outline-primary" id="sortDropdown" ngbDropdownToggle>Sort By: {{sortOption}}</button>
@@ -30,6 +27,8 @@
             </div>
         </form>
     </nav>
+    
+    <case-spinner *ngIf="loading"></case-spinner>
     <router-outlet> 
         <case-articles [articles]='articles'></case-articles>
     </router-outlet>
