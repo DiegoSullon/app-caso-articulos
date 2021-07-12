@@ -29,8 +29,8 @@
     </nav>
     
     <case-spinner *ngIf="loading"></case-spinner>
+    <case-articles [articles]='articles'></case-articles>
     <router-outlet> 
-        <case-articles [articles]='articles'></case-articles>
     </router-outlet>
 </main>
 <!-- Modal -->
